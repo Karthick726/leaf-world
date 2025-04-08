@@ -19,7 +19,7 @@ const orderRoute = require("./Route/orderRoute");
 app.use(cookieParser());
 app.use(express.json());
 const corsOptions = {
-  origin: ["http://localhost:5173", "http://localhost:3000","https://leaf-world.vercel.app"],
+  origin: ["http://localhost:5173", "http://localhost:3000","https://leaf-world.vercel.app","https://leaf-world-client-frontend.vercel.app"],
 
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
