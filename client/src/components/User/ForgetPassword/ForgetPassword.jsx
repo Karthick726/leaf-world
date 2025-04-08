@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from "react";
 import { TextField, Button, Typography, Link, Box,InputAdornment  } from "@mui/material";
-import Grid from "@mui/material/Grid2";
 import './ForgetPassword.css'
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
