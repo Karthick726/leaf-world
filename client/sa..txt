@@ -1,0 +1,43 @@
+          <Card
+  sx={{
+    flex: 1,
+    p: 4,
+    boxShadow: 6,
+    borderRadius: 3,
+    backgroundColor: "#F1F8E9",
+    position: "relative", 
+    overflow: "hidden",
+    "&::after": {
+      content: '""',
+      position: "absolute",
+      top: 0,
+      right: 0,
+      width: "130px", // Adjust size as needed
+
+      height: "130px", // Adjust size as needed
+      backgroundColor: "#1B5E20", // Dark green color
+      clipPath: "polygon(100% 0, 0 0, 100% 100%)", // Creates a triangular shape
+    },
+  }}
+>
+  <CardContent sx={{ position: "relative", zIndex: 6 }}>
+    <Typography variant="h4" textAlign="center" fontWeight="bold" color="#1B5E20">
+      Need Help?
+    </Typography>
+    <Typography variant="body1" textAlign="center" fontSize="1.3rem" color="#424242">
+      Our Customer Service is available Monday to Friday, from 10:30 AM to 5:30 PM.
+      <br /><br />
+      <strong style={{ fontSize: "1.2rem", color: "#2E7D32" }}>+91 120 4092045*</strong>
+      <br />
+      (Charges may apply as per your service provider.)
+      <br /><br />
+      <strong>FAQ</strong>
+      <br />
+      Find answers in our frequently asked questions.
+      <br />
+      <a href="/home-faq" style={{ color: "#388E3C", fontWeight: "bold", textDecoration: "none" }}>
+        View FAQ
+      </a>
+    </Typography>
+  </CardContent>
+</Card>

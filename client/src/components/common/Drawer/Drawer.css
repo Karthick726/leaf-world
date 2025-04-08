@@ -1,0 +1,52 @@
+.Drawer-Open {
+  width: 500px;
+  padding: 10px 30px !important;
+}
+
+@media (max-width: 767px) {
+  .Drawer-Open {
+    width: 300px;
+    padding: 10px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .Drawer-Open {
+    width: 300px;
+  }
+}
+
+.div-info {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+.li-drawer{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-top: 20px;
+}
+.point-drawer,.heading-drawer{
+    color: #002d18;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.heading-drawer{
+    text-transform: uppercase;
+}
+
+.icons-drawer{
+    color: #002d18;
+    
+}

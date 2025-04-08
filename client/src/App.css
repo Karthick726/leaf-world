@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+.animate-common-btn {
+    width: 50% !important;  /* Set button width to 50% */
+    padding: 10px !important;
+    display: block !important; /* Ensure it behaves like a block element */
+    background-color: transparent !important;
+    border-radius: 5px !important;
+    font-size: 20px !important;
+    color: black !important;
+    background-color: #2E7D32 !important;
+    border: 2px solid #002D18 !important;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+}
+
+/* Create the hover effect layer */
+.animate-common-btn::before {
+    content: "" !important;
+    position: absolute !important;
+    top: -100% !important; 
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: #002D18 !important;
+    transition: top 0.5s ease-in-out;
+    z-index: -1;
+}
+
+
+.animate-common-btn:hover::before {
+    top: 0 !important; 
+}
+
+
+.animate-common-btn:hover {
+    color: white !important;
+    z-index: 1;
+}

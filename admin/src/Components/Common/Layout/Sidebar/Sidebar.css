@@ -1,0 +1,58 @@
+.sidebar {
+  background-color: #f0fdf4; /* Light green background */
+  color: #064e3b !important; /* Dark green text */
+  width: 250px;
+  height: 100vh;
+  padding: 20px 15px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .nav-link {
+  color: #064e3b;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #bbf7d0; /* Light green hover */
+  color: #065f46;
+}
+
+.sidebar .nav-link.active {
+  background-color: #34d399; /* Bright green for active */
+  color: #fff; /* White text for contrast */
+  font-weight: bold;
+}
+
+.sidebar .nav-heading {
+  color: #002D18;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+.sidebar .sidebar-nav li {
+  margin-bottom: 10px;
+}
+
+.sidebar .nav-item i {
+  margin-right: 10px;
+}
+
+.sidebar .logout-button {
+  background-color: #dc2626;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar .logout-button:hover {
+  background-color: #b91c1c;
+}

@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+.full-height-background {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../../../assets/images/login.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Optional dark overlay */
+  z-index: 1;
+}
+
+.login-form {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px 30px;
+}
+
+.form-button button {
+  width: 100%;
+}
+
+.form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form {
+  width: 87%;
+  margin: 0 auto;
+  color: #000;
+}
+
+.form-button {
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-form {
+    padding: 15px 20px;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 10px;
+    max-width: 300px;
+  }
+
+  .form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .login-form {
+    max-width: 300px;
+    padding: 8px;
+  }
+
+  .form {
+    width: 88%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+  max-width: 390px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.radio-login {
+  display: none !important;
+}
+.wrapper .title-text {
+  display: flex;
+  width: 200%;
+  transition: all 0.6s ease;
+}
+
+.wrapper .title {
+  width: 50%;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s ease;
+  color: #333;
+}
+
+.wrapper .title.active {
+  color: #0073e6;
+}
+
+.slide-controls {
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  gap: 20px;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.slide-controls .slide {
+  height: 100%;
+  width: 100%;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+  text-align: center;
+  justify-content: center;
+}
+
+.slide-controls .Signup {
+  color: #fff4f4 !important;
+}
+
+.slider-tab {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 15px;
+  background: linear-gradient(to left, #003366, #004080, #0059b3, #0073e6);
+  transition: all 0.6s ease;
+}
+
+.shift {
+  left: 50%;
+}
+
+input[type="radio"] {
+  display: none;
+  user-select: none;
+}
+
+.wrapper .form-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.css-1o5c2aq-MuiPaper-root-MuiCard-root {
+  box-shadow: none !important;
+}

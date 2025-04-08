@@ -1,0 +1,28 @@
+.SubAllbanners-hero-image-container {
+    overflow: hidden !important;
+  }
+  
+  .texting {
+    color: #e38e39;
+  }
+  
+  .texting:hover {
+    color: black;
+  }
+  
+  .SubAllbanners-hero-image {
+    display: inline-block;
+    width: 100% !important;
+    height: 400px;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.639),
+        rgba(0, 0, 0, 0.516)
+      ),
+      url("../../../assets/Mallapuram/Banner/upscaled-banner_1.jpg") no-repeat
+        center center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    animation: zoom 10s infinite ease-in-out;
+  }
+  

@@ -1,0 +1,9 @@
+img{
+    width: 100vw;
+    height: 120vh;
+    object-fit: cover;
+}
+
+.carousel-indicators{
+    display: none !important;
+}
